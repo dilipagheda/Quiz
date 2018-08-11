@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="#FFDE03">
+
+    <RelativeLayout
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/finishmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have finished the quiz!"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restart"
+            android:text="Restart"
+            android:layout_below="@+id/finishmessage"
+            android:layout_centerHorizontal="true"
+            android:background="#0336FF"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kids Math Challange!"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="#0336FF"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_id"
+        tools:text="1 of 10"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        tools:text="10+25=35?"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:textSize="50sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="True"
+            android:id="@+id/truebutton"
+            android:fontFamily="casual"
+            android:textColor="@android:color/white"
+            android:background="#0336FF"
+            android:layout_margin="16dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="False"
+            android:id="@+id/falsebutton"
+            android:fontFamily="casual"
+            android:background="#FF0266"
+            android:layout_margin="16dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:text="Score:"
+        android:fontFamily="casual"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
